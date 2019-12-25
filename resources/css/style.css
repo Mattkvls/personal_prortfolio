@@ -25,7 +25,22 @@ section{
     padding: 80px 0;
 }
 
+.box{
+    padding: 2%;
+}
+/*---------------------PARAGRAPHS-------------------------------*/
 
+.long-copy{
+    line-height:145%; /*120-145% from typography lesson*/
+    width: 70%;
+    margin-left: 15%;
+    margin-right: auto;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
 /*-------------------------HEADINGS-------------------------------------*/
 
 h1,
@@ -36,16 +51,41 @@ h3{
 }
 
 h1{
+    margin-top: 0;
+    margin-bottom: 20px;
     font-size: 200%;
     color:#fff;
     word-spacing: 4px;
-    letter-spacing: 1px;
     margin: 0;
+    letter-spacing: 1px;
 }
 
 h2{
+    font-size: 180%;
+    word-spacing: 2px;
     margin-bottom: 20px;
-    text-transform:none;
+    /* text-transform:none; */
+     text-align: center;
+     letter-spacing: 1px;
+ } 
+
+ h2:after{
+     display: block;
+     height: 2px;
+     background-color: #0C0032;
+     content: " "; /*πρεπει να υπαρχει παντα ακομα και αν ειναι αδειο*/
+     width: 100px;
+     margin: 0 auto;
+     margin-top: 30px;
+ }
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+.features-image{
+    height: 100px;
+    width: auto;
 }
 /*----------------------------------------------------------------
 ---------------------------HEADER-------------------------------------------------------------------------------------------------*/
@@ -74,7 +114,9 @@ header{
     left: 30px;
 
 }
-
+.span-name{
+    color: #0C0032;
+}
 .main-nav{
     float: right;
     margin-top: 60px;
@@ -137,3 +179,4 @@ header{
     background-color: #0C0032;
     color: #fff;
 }
+/*-----------------------SECTION-SERVICES----------------------------------*/
